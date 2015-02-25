@@ -5,19 +5,4 @@ We make it easy to install our program into any HTML document just put this `<sc
  in your `<head>` tag 
 # Use
 To use our program follow our example below
-<html>
-<head>
-<script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-</head>
-  <body>
-    <script>
-     var id_gen = new Firebase ('id-gen.firebaseIO.com')
-     id_gen.push({object_here: data_here, different_object_here: data_here});`
-     id_gen.on("child_added", function(snapshot) {`
-       console.log("your_id: " + snapshot.name());`
-       console.log("data: " + snapshot.val());`
-      });
-     </script>
-  </body>
- </html>
+<p><html> <head> <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script> <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script> </head>  <body>  <script>  var id_gen = new Firebase ('id-gen.firebaseIO.com')  id_gen.push({object_here: data_here, different_object_here: data_here});&#96;  id_gen.on(&quot;child_added&quot;, function(snapshot) {&#96;  console.log(&quot;your_id: &quot; + snapshot.name());&#96;  console.log(&quot;data: &quot; + snapshot.val());&#96;  });  </script>  </body>  </html></p>
